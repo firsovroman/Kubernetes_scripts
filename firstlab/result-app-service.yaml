@@ -6,9 +6,11 @@ metadata:
     name : result-service
     app : demo-voting-app # совпадает с другими подами всего контура
 spec:
+  type: NodePort
   ports:
     - port: 80
       targetPort: 80
+      nodePort: 30005
   selector:
     pod : result-app-pod
     app : demo-voting-app # совпадает с другими подами всего контура
