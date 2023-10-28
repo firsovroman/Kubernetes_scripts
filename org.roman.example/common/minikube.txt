@@ -1,0 +1,9 @@
+
+minikube start --driver=virtualbox --no-vtx-check=true
+
+
+minikube start --cpus=4 --memory=8gb --disk-size=25gb --driver=virtualbox --no-vtx-check=true
+
+
+web - интерфейс
+http://127.0.0.1:53674/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
