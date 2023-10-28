@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker-app-pod
+  labels:
+    pod : worker-app-pod
+    app : demo-voting-app # совпадает с другими подами всего контура
+spec:
+  containers:
+    - name : worker-app
+      image: dockersamples/examplevotingapp_worker
